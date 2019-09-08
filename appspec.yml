@@ -9,19 +9,19 @@ permissions:
    owner: root
    group: root
 hooks:
- AplicationStop:
-  - location: scripts/ApplicationStop.sh
-    timeout: 120
-    runas: root
- BeforeInstall:
-  - location: scripts/BeforeInstall.sh
-    timeout: 300
-    runas: root
- AfterInstall:
-  - location: scripts/AfterInstall.sh
-    timeout: 5
-    runas: root
- AplicationStart:
-  - location: scripts/ApplicationStart.sh
-    timeout: 120
-    runas: root
+  AplicationStop:
+    - location: scripts/ApplicationStop.sh
+      timeout: 120
+      runas: root
+  BeforeInstalls:
+    - location: scripts/BeforeInstall.sh
+      timeout: 300
+      runas: root
+  AfterInstall:
+    - location: scripts/AfterInstall.sh
+      timeout: 5
+      runas: root
+  AplicationStart:
+    - location: scripts/ApplicationStart.sh
+      timeout: 120
+      runas: root
