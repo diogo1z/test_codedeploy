@@ -3,4 +3,4 @@
 
 
 #Atualiza os pacotes do OS
-sudo yum update -y #
+#sudo yum update -y #
