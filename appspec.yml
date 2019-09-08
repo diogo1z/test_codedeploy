@@ -12,16 +12,16 @@ hooks:
  AplicationStop:
   - location: scripts/ApplicationStop.sh
     timeout: 120
-    ruanas: root
+    runas: root
  BeforeInstall:
   - location: scripts/BeforeInstall.sh
     timeout: 300
-    ruanas: root
+    runas: root
  AfterInstall:
   - location: scripts/AfterInstall.sh
     timeout: 5
-    ruanas: root
+    runas: root
  AplicationStart:
   - location: scripts/ApplicationStart.sh
     timeout: 120
-    ruanas: root
+    runas: root
